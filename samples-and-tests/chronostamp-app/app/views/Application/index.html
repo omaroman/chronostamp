@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h3>Articles:</h3>
+<dl>
+    #{list items:articles, as:'article'}
+        <dt><strong>${article.name}</strong></dt>
+        <dd><em>created at</em>: ${article.created_at}</dd>
+        <dd><em>updated at</em>: ${article.updated_at}</dd>
+    #{/list}
+</dl>
+
+<br />
+
+<h3>Quote:</h3>
+<cite>&ldquo;${quote.description}&rdquo;</cite>
+<!-- if the following block is uncommented, the template won't compile -->
+*{
+<p>${quote.created_at}</p>
+<p>${quote.updated_at}</p>
+}*

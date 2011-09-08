@@ -1,0 +1,11 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+Article(mouse):
+    name: Genius
+
+Article(gameconsole):
+    name: PS360
+
+Article(camera):
+    name: Sony Alpha 77

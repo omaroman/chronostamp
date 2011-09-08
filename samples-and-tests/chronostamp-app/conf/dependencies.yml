@@ -1,0 +1,12 @@
+# Application dependencies
+
+require:
+    - play
+    - customModules -> chronostamp 0.1
+                      
+repositories:
+    - custom modules:
+        type:       local
+        artifact:   ${application.path}/../../../[module]-[revision]
+        contains:
+            - customModules -> *
