@@ -67,7 +67,7 @@ public class ChronostampEnhancer extends Enhancer {
 		
 		// ----- Add annotation @Temporal(TemporalType.TIMESTAMP) to created_at and updated_at fields -----
 		//attr = new AnnotationsAttribute(constpool, AnnotationsAttribute.visibleTag);
-		annot = new Annotation("javax.persistence.TemporalType", constpool);
+		annot = new Annotation("javax.persistence.Temporal", constpool);
 		enumValue = new EnumMemberValue(constpool);
 		enumValue.setType("javax.persistence.TemporalType");
 		enumValue.setValue("TIMESTAMP");
