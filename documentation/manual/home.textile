@@ -6,8 +6,10 @@ Chronostamp adds magic timestamp fields to Models, like Ruby on Rails:
 
 h2. Features
 
-* will add timestamp magic fields (created_at and updated_at)
-* will automatically record creation and update timestamps of database objects
+* will add timestamp magic fields (created_at and updated_at) in an unobtrusive way.
+* will automatically record creation and update timestamps of database objects.
+* avoid inheritance coupling just for adding two attributes.
+* avoid to write @MappedSuperclass for every single model. 
 
 h2. Note:
 * SpringPlugin has a priority of 1000 and it clashes with this one if it has a priority <= 1000, that's why this plugin has a priority of 1001
