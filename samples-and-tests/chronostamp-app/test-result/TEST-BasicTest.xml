@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<testsuite failures="0" time="0.271" errors="0" skipped="0" tests="1" name="BasicTest">
-  <testcase classname="BasicTest" name="testMagicTimestampFields" time="0.271">
-      </testcase>
-</testsuite>

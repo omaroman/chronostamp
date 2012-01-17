@@ -9,30 +9,6 @@ h2. Features
 * will add timestamp magic fields (created_at and updated_at) in an unobtrusive way.
 * will automatically record creation and update timestamps of database objects.
 * avoid inheritance coupling just for adding two attributes.
-* avoid to write @MappedSuperclass for every single model. 
+* avoid to write @MappedSuperclass for every single model.
 
-h2. Note:
-* SpringPlugin has a priority of 1000 and it clashes with this one if it has a priority <= 1000, that's why this plugin has a priority of 1001
-
-h2. How to Use
-
-Well it's kind of easy, just add this module to your dependecy.yml file
-
-If you have a legacy DB with tables that doesn't have created_at and updated_at timestamp columns,
-you can skip the creation of these magic timestamp fields by annotating the Model with
-@NoChronostamp
-
-If you control the creation of DB (Evolution, MyBatis Migrations, etc).
-the timestamp columns must be of type TIMESTAMP
-
-h4. Testing the timestamping
-
-Start play in test mode and launch a browser to "http://localhost:9000/@test"
-Done!
-You may find a sample app bundled with the module
-
-h2. Credits
-
-This module is inspired on Ruby on Rails magic timestamp fields and Code snippet
-"Keep track of JPA record creation/updates":http://www.playframework.org/community/snippets/5
-Author: Omar O. Román
+See "full documentation":https://github.com/omaroman/chronostamp/blob/master/documentation/manual/home.textile for more information.

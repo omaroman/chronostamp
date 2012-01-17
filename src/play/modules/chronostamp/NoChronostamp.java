@@ -1,3 +1,9 @@
+/**
+ * Author: OMAROMAN
+ * Date: 9/8/11
+ * Time: 10:25 AM
+ */
+
 package play.modules.chronostamp;
  
 import java.lang.annotation.ElementType;

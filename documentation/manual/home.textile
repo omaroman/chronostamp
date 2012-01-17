@@ -27,7 +27,7 @@ the timestamp columns must be of type TIMESTAMP
 
 h4. Testing the timestamping
 
-Start play in test mode and launch a browser to "http://localhost:9000/@test"
+Start play in test mode %play test% and launch a browser to "http://localhost:9000/@tests"
 Done!
 You may find a sample app bundled with the module
 

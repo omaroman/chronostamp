@@ -1,6 +1,0 @@
-08 Sep 2011 10:43:12,088 INFO  ~ Starting /home/omaroman/MySelfTraining/Play/chronostamp-0.1/samples-and-tests/chronostamp-app
-08 Sep 2011 10:43:12,094 INFO  ~ Module chronostamp is available (/home/omaroman/MySelfTraining/Play/chronostamp-0.1/samples-and-tests/chronostamp-app/../../../chronostamp-0.1)
-08 Sep 2011 10:43:12,982 WARN  ~ You're running Play! in DEV mode
-08 Sep 2011 10:43:13,243 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-08 Sep 2011 10:43:20,646 INFO  ~ Connected to jdbc:h2:db/h2/test;MODE=MySQL
-08 Sep 2011 10:43:21,756 INFO  ~ Application 'chronostamp-app' is now started !

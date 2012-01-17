@@ -1,17 +1,15 @@
 package controllers;
 
-import play.mvc.*;
+import play.mvc.Controller;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.*;
-
-import models.*;
+import java.util.List;
 
 public class Application extends Controller {
 
     public static void index() throws InvocationTargetException, NoSuchMethodException, IllegalAccessException {
 
-        List<Article> articles = Article.findAll();
+        List<models.Article> articles = models.Article.findAll();
 
         // Since created_at and updated_at fields are injected at run time
         // they must be invoked by using reflection
@@ -21,7 +19,7 @@ public class Application extends Controller {
 //        Logger.info("created at: " + created_at.toString());
 //        Logger.info("updated at: " + updated_at.toString());
 
-        Quote quote = (Quote) Quote.findAll().get(0);
+        models.Quote quote = (models.Quote) models.Quote.findAll().get(0);
 
         render(articles, quote);
     }

@@ -1,0 +1,21 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> crud
+
+    - chronostamp -> chronostamp
+#    - crud -> crud
+                      
+repositories:
+    - test chronostamp module:
+        type:       local
+        artifact:   ${application.path}/../../../[module]
+        contains:
+            - chronostamp -> *
+
+#    - test crud module:
+#            type:       local
+#            artifact:   ${application.path}/../../../[module]
+#            contains:
+#                - crud -> *
