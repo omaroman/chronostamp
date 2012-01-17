@@ -2,10 +2,9 @@
 
 require:
     - play
-    - play -> crud
 
     - chronostamp -> chronostamp
-#    - crud -> crud
+    - crud -> crud
                       
 repositories:
     - test chronostamp module:
@@ -14,8 +13,8 @@ repositories:
         contains:
             - chronostamp -> *
 
-#    - test crud module:
-#            type:       local
-#            artifact:   ${application.path}/../../../[module]
-#            contains:
-#                - crud -> *
+    - test crud module:
+        type:       local
+        artifact:   ${application.path}/../../../[module]
+        contains:
+            - crud -> *
